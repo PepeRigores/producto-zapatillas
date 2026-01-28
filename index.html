@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conesa</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts: Inter -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playwrite+AU+TAS:wght@100..400&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid px-5">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item me-4"><a class="nav-link" href="#">Hombre</a></li>
+                    <li class="nav-item me-4"><a class="nav-link" href="#">Mujer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Nuevas Llegadas</a></li>
+                </ul>
+            </div>
+
+            <a class="navbar-brand" href="#">conesa</a>
+
+            <div class="d-flex align-items-center gap-4">
+                <a href="#" class="nav-link d-none d-md-block">Ayuda</a>
+                <a href="#" class="nav-link d-none d-md-block">Cuenta</a>
+                <a href="#" class="cart-icon text-dark">
+                    <i class="bi bi-cart2"></i>
+                    <span class="cart-count">2</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container-fluid p-0 pt-5 mt-4">
+        <div class="row g-0 hero-section">
+            <!-- Left Column: Carousel -->
+            <div class="col-lg-7 hero-carousel-col">
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true"></button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/zapatillas-side.webp" class="d-block w-100" alt="Fit Co Runner Side View">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/zapatillas-front.png" class="d-block w-100" alt="Fit Co Runner Angle View">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/zapatillas-back.png" class="d-block w-100" alt="Fit Co Runner Side View">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Column: Product Info -->
+            <div class="col-lg-5">
+                <div class="product-details">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-3 text-muted small">
+                            <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-muted">Inicio</a>
+                            </li>
+                            <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-muted">Mujer</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Zapatillas</li>
+                        </ol>
+                    </nav>
+
+                    <h1 class="product-title">conesa runner</h1>
+                    <div class="product-price">79,00 €</div>
+
+                    <div class="review-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <span class="review-count">(1,240 Reseñas)</span>
+                    </div>
+
+                    <p class="text-muted mb-4">
+                        Nuestra zapatilla clásica de lana natural. Suave, ligera y transpirable para un confort que dura
+                        todo el día.
+                    </p>
+
+                    <!-- Color Selector -->
+                    <div class="color-selector">
+                        <span class="color-label">Color: Blanco cálido</span>
+                        <div class="color-options">
+                            <div class="color-btn" style="background-color: #f0f0f0;" title="Blanco Nube"></div>
+                            <div class="color-btn active"
+                                style="background: linear-gradient(135deg, rgb(131, 126, 107) 50%, rgb(219, 212, 200) 50%);"
+                                title="Blanco cálido"></div>
+                            <div class="color-btn" style="background-color: #2c3e50;" title="Azul Profundo"></div>
+                            <div class="color-btn" style="background-color: #8d998d;" title="Verde Oliva"></div>
+                        </div>
+                    </div>
+
+                    <!-- Size Selector -->
+                    <div class="size-selector">
+                        <span class="size-label">Talla: selecciona una talla</span>
+                        <div class="size-grid">
+                            <button class="size-btn">36</button>
+                            <button class="size-btn" disabled style="opacity:0.5; cursor:not-allowed;">37</button>
+                            <button class="size-btn">38</button>
+                            <button class="size-btn">39</button>
+                            <button class="size-btn">40</button>
+                            <button class="size-btn">41</button>
+                            <button class="size-btn">42</button>
+                            <button class="size-btn">43</button>
+                            <button class="size-btn">44</button>
+                            <button class="size-btn">45</button>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-add-cart">Añadir al carrito</button>
+
+                    <div class="mt-4 text-center">
+                        <small class="text-muted">Envío gratis y devoluciones en 30 días.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Value Props Section -->
+    <section class="value-props">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 prop-item">
+                    <div class="prop-icon">
+                        <i class="bi bi-recycle"></i>
+                    </div>
+                    <h3 class="prop-title">Sostenibilidad Real</h3>
+                    <p class="prop-desc">Fabricadas con lana merino ZQ certificada y materiales renovables que reducen
+                        nuestra huella de carbono.</p>
+                </div>
+                <div class="col-md-4 prop-item">
+                    <div class="prop-icon">
+                        <i class="bi bi-droplet"></i>
+                    </div>
+                    <h3 class="prop-title">Lavable a Máquina</h3>
+                    <p class="prop-desc">¿Se han ensuciado? No hay problema. Mételas en la lavadora en ciclo delicado y
+                        quedarán como nuevas.</p>
+                </div>
+                <div class="col-md-4 prop-item">
+                    <div class="prop-icon">
+                        <i class="bi bi-cloud"></i>
+                    </div>
+                    <h3 class="prop-title">Confort Natural</h3>
+                    <p class="prop-desc">Olvídate de los calcetines. Nuestro interior suave regula la temperatura y
+                        absorbe la humedad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials Section -->
+    <section class="materials-section">
+        <div class="materials-overlay"></div>
+        <div class="container">
+            <div class="materials-content">
+                <div class="materials-tag">Nuestros Materiales</div>
+                <h2 class="materials-title">Suavidad que<br>Respeta el Planeta.</h2>
+                <p class="materials-text">
+                    Nuestra fibra de eucalipto patentada es sedosa, suave y proviene de árboles cultivados de forma
+                    sostenible que requieren un 95% menos de agua que el algodón convencional.
+                </p>
+                <a href="#" class="btn-outline-custom">Descubre Más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="review-card">
+                        <div class="review-stars mb-3">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text">"Son las zapatillas más cómodas que he tenido nunca. Literalmente como
+                            caminar sobre nubes. El material de lana es increíble."</p>
+                        <p class="review-author">— Carlos M.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="review-card">
+                        <div class="review-stars mb-3">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text">"Me encanta que sean sostenibles y lavables. Ya las he lavado dos veces y
+                            siguen perfectas. Diseño minimalista de 10."</p>
+                        <p class="review-author">— Ana P.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="review-card">
+                        <div class="review-stars mb-3">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <p class="review-text">"El color blanco cálido combina con todo. Son ligeras y no rozan nada
+                            desde el primer día. Repetiré seguro."</p>
+                        <p class="review-author">— Lucía R.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Suggestions Section -->
+    <section class="suggestions-section">
+        <div class="container">
+            <h2 class="section-title">También te puede interesar</h2>
+            <div class="row justify-content-center g-4">
+                <!-- Product 1 -->
+                <div class="col-md-5 col-lg-4">
+                    <div class="suggestion-card">
+                        <div class="suggestion-img-wrapper">
+                            <img src="images/shoe-angle.png" class="suggestion-img" alt="Conesa Casual">
+                        </div>
+                        <div class="suggestion-info">
+                            <h3 class="suggestion-title">conesa basic</h3>
+                            <div class="suggestion-price">59,00 €</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-5 col-lg-4">
+                    <div class="suggestion-card">
+                        <div class="suggestion-img-wrapper">
+                            <img src="images/shoe-side.png" class="suggestion-img" alt="Conesa Casual">
+                        </div>
+                        <div class="suggestion-info">
+                            <h3 class="suggestion-title">conesa basic</h3>
+                            <div class="suggestion-price">59,00 €</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Simple -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <h4 class="mb-4">conesa shoes</h4>
+            <div class="d-flex justify-content-center gap-3 mb-4">
+                <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+            </div>
+            <p class="small text">&copy; 2026 Jose Conesa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Interactivity -->
+    <script>
+        // Simple interactivity for size buttons
+        const sizeBtns = document.querySelectorAll('.size-btn');
+        sizeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (btn.hasAttribute('disabled')) return;
+                sizeBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+
+        // Simple interactivity for color buttons
+        const colorBtns = document.querySelectorAll('.color-btn');
+        const colorLabel = document.querySelector('.color-label');
+        colorBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                colorBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                if (colorLabel) {
+                    colorLabel.textContent = 'Color: ' + btn.getAttribute('title');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
