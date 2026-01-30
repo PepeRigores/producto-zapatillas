@@ -339,6 +339,7 @@ body {
         position: static;
         transform: none;
         margin-right: auto;
+        margin-left: auto;
     }
 
     .nav-link {
