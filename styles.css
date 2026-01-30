@@ -19,7 +19,7 @@ body {
 /* Navbar Customization */
 .navbar {
     padding: 1.5rem 0;
-    background-color: rgb(250, 144, 144);
+    background-color: rgb(246, 129, 129);
     border-bottom: 1px solid transparent;
     transition: border-color 0.3s ease;
 }
@@ -27,8 +27,10 @@ body {
 .navbar-brand {
     font-family: var(--font-brand);
     font-weight: 600;
+    color: rgb(254, 201, 201);
     letter-spacing: -0.5px;
-    font-size: 3rem;
+    font-size: 3.2rem;
+    padding-top: 0;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -36,14 +38,14 @@ body {
 
 .nav-link {
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 1frem;
     color: var(--color-primary) !important;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .cart-icon {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     position: relative;
 }
 
@@ -53,7 +55,7 @@ body {
     right: -8px;
     background: var(--color-accent);
     color: white;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     width: 18px;
     height: 18px;
     border-radius: 50%;
